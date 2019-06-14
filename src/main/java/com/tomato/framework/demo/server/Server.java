@@ -1,7 +1,7 @@
 package com.tomato.framework.demo.server;
 
 import com.tomato.framework.demo.facade.service.HelloWorld;
-import com.tomato.framework.demo.facade.service.impl.HelloWorldImpl;
+import com.tomato.framework.demo.server.service.impl.HelloWorldImpl;
 import com.tomato.framework.plugin.rmi.register.RmiRegister;
 import com.tomato.framework.plugin.rmi.server.RmiServer;
 
