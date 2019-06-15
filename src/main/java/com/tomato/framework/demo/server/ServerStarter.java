@@ -17,8 +17,8 @@ public class ServerStarter {
 //        Register register = new RmiRegister(HelloWorld.class.getName(), new HelloWorldImpl());
         Map<String, Remote> map = ImmutableMap
             .of(HelloWorld.class.getName(), new HelloWorldImpl());
-        Register register = new ZKRegister("127.0.0.1:2181" , map);
-        Server rmiServer = new RmiServer("rmi://127.0.0.1:18081", register);
+        Register register = new ZKRegister("127.0.0.1:2181", map);
+        Server rmiServer = new RmiServer(18081, register);
         rmiServer.start();
 //        rmiServer.stop();
     }
